@@ -215,7 +215,7 @@ func inputHandler(event *tcell.EventKey) *tcell.EventKey {
 		}
 
 	case event.Rune() == 'N':
-		if len(searchIndexes) == 1 {
+		if len(searchIndexes) <= 1 {
 			return nil
 		}
 
@@ -227,8 +227,8 @@ func inputHandler(event *tcell.EventKey) *tcell.EventKey {
 		pages.SwitchToPage(fmt.Sprintf("page-%d", searchIndexes[searchIndex][0]))
 		tables[searchIndexes[searchIndex][0]].Select(searchIndexes[searchIndex][1], searchIndexes[searchIndex][2])
 
-	case event.Rune() == 'n':
-		if len(searchIndexes) == 1 {
+	case event.Rune() <= 'n':
+		if len(searchIndexes) <= 1 {
 			return nil
 		}
 
