@@ -13,6 +13,7 @@ import (
 
 const cellText string = "%.4s[black]____[white]%s "
 
+// EmojiValues type used to hold emoji value when returned
 type EmojiValues struct {
 	Emoji       string
 	Description string
