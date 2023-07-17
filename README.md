@@ -14,7 +14,7 @@ Here are different preset "variables" that you can search and replace in this te
 
 
 <!-- PROJECT SHIELDS/BUTTONS -->
-![1.0.0](https://img.shields.io/badge/status-X.X.X-red)
+![1.0.0](https://img.shields.io/badge/status-1.0.0-red)
 [![GoDoc](https://godoc.org/github.com/ethanbaker/epick?status.svg)](https://godoc.org/github.com/ethanbaker/epick)
 [![Go Report Card](https://goreportcard.com/badge/github.com/ethanbaker/epick)](https://goreportcard.com/report/github.com/ethanbaker/epick)
 [![Contributors][contributors-shield]][contributors-url]
@@ -211,7 +211,7 @@ Project Link: [https://github.com/ethanbaker/epick][project-url]
 [stars-shield]: https://img.shields.io/github/stars/ethanbaker/epick.svg
 [issues-shield]: https://img.shields.io/github/issues/ethanbaker/epick.svg
 [license-shield]: https://img.shields.io/github/license/ethanbaker/epick.svg
-[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg&logo=linkedin&colorB=555
+[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?logo=linkedin&colorB=555
 
 [contributors-url]: <https://github.com/ethanbaker/epick/graphs/contributors>
 [forks-url]: <https://github.com/ethanbaker/epick/network/members>
