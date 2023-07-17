@@ -228,7 +228,7 @@ func inputHandler(event *tcell.EventKey) *tcell.EventKey {
 		pages.SwitchToPage(fmt.Sprintf("page-%d", searchIndexes[searchIndex][0]))
 		tables[searchIndexes[searchIndex][0]].Select(searchIndexes[searchIndex][1], searchIndexes[searchIndex][2])
 
-	case event.Rune() <= 'n':
+	case event.Rune() == 'n':
 		if len(searchIndexes) <= 1 {
 			return nil
 		}
@@ -256,21 +256,21 @@ func movementHandler(event *tcell.EventKey) *tcell.EventKey {
 		}
 		return nil
 
-	case event.Rune() == 'h' || event.Key() == tcell.KeyRight:
+	case event.Rune() == 'h' || event.Key() == tcell.KeyLeft:
 		row, col := tables[pageIndex].GetSelection()
 		if col > 0 {
 			tables[pageIndex].Select(row, col-2)
 		}
 		return nil
 
-	case event.Rune() == 'k' || event.Key() == tcell.KeyRight:
+	case event.Rune() == 'k' || event.Key() == tcell.KeyUp:
 		row, col := tables[pageIndex].GetSelection()
 		if row > 0 {
 			tables[pageIndex].Select(row-2, col)
 		}
 		return nil
 
-	case event.Rune() == 'j' || event.Key() == tcell.KeyRight:
+	case event.Rune() == 'j' || event.Key() == tcell.KeyDown:
 		row, col := tables[pageIndex].GetSelection()
 		if row < tables[pageIndex].GetRowCount()-2 && tables[pageIndex].GetCell(row+2, col).Text != "" {
 			tables[pageIndex].Select(row+2, col)
